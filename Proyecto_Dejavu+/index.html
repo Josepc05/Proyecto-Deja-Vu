@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Deja Vu Body Art</title>
+    <link rel="website icon" type="png" href="logodj.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+MT+Poster+Compressed&display=swap">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.11.0/fullcalendar.min.js"></script>
+    
+    
+    
+</head>
+
+<body>
+    <img src="logo.png" alt="" class="logo">
+    <header class="container">
+        <div class="page-header">
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#homeSection" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="#materialSection" style="--navAni:2">Material</a></li>
+                <li><a href="#accesoriosSection" style="--navAni:3">Accesorios</a></li>
+                <li><a href="#tatuadoresSection" style="--navAni:4">Tatuadores</a></li>
+                <li><a href="#citasSection" style="--navAni:5">Citas</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container" id="homeSection">
+        <div class="main">
+            <h1>Bienvenido a Deja Vu Body Art</h1>
+            <p>Descubre nuestro mundo de tatuajes y accesorios.</p>
+        </div>
+    </section>
+
+    <section class="container" id="materialSection" style="display: none;">
+        <div class="main">
+            <h1>Material Section</h1>
+        </div>
+    </section>
+
+    <section class="container" id="accesoriosSection" style="display: none;">
+        <div class="main">
+            <h1>Accesorios Section</h1>
+        </div>
+    </section>
+
+    <section class="container" id="tatuadoresSection" style="display: none;">
+        <div class="main">
+            <h1>Tatuadores Section</h1>
+        </div>
+    </section>
+
+    <section class="container" id="citasSection" style="display: none;">
+        <div class="main">
+            <h1>Citas Section</h1>
+            <div id="calendar"></div>
+        </div>
+    </section>
+
+    <script src="principal.js"></script>
+</body>
+
+</html>
